@@ -5,10 +5,10 @@ public class FizzBuzz {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		
+		imprimir();
 	}
 	
-	public boolean mult5(int num)
+	public static boolean mult5(int num)
 	{
 		if ( num % 5 == 0)
 			return true;
@@ -16,7 +16,7 @@ public class FizzBuzz {
 			return false;
 	}
 	
-	public boolean mult3(int num)
+	public  static boolean mult3(int num)
 	{
 		if ( num % 3 == 0)
 			return true;
@@ -24,19 +24,27 @@ public class FizzBuzz {
 			return false;
 	}
 
-	public String devolverFizzBuzz(int num)
+	public static String devolverFizzBuzz(int num)
 	{
 		String res = "";
-		if (this.mult3(num) || this.mult5(num))
+		if (mult3(num) || mult5(num))
 		{
-			if (this.mult3(num))
+			if (mult3(num))
 				res+="Fizz";
-			if (this.mult5(num))
+			if (mult5(num))
 				res+="Buzz";
 		}
 		else
 		res= Integer.toString(num);
 		
 		return res;			
+	}
+	
+	public static void imprimir()
+	{
+		for(int c=1;c<=100;c++)
+		{
+			System.out.println(devolverFizzBuzz(c));
+		}
 	}
 }
