@@ -8,8 +8,12 @@ public class FizzBuzz {
 		
 	}
 	
-	public int verificarTest(){
-		return 1;
+	public boolean mult5(int num)
+	{
+		if ( num % 5 == 0)
+			return true;
+		else
+			return false;
 	}
 
 }
