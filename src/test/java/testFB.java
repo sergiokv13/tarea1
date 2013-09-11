@@ -19,6 +19,13 @@ public class testFB {
 			assertEquals(true,fb.mult3(c));
 		}
 	}
+	@Test
+	public void verificarFizzBuzzPorNumero(){
+		assertEquals("FizzBuzz",fb.devolverFizzBuzz(15));
+		assertEquals("Fizz",fb.devolverFizzBuzz(18));
+		assertEquals("Buzz",fb.devolverFizzBuzz(25));
+		assertEquals("17",fb.devolverFizzBuzz(17));
+	}
 	
 	
 

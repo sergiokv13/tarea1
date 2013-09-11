@@ -24,4 +24,19 @@ public class FizzBuzz {
 			return false;
 	}
 
+	public String devolverFizzBuzz(int num)
+	{
+		String res = "";
+		if (this.mult3(num) || this.mult5(num))
+		{
+			if (this.mult3(num))
+				res+="Fizz";
+			if (this.mult5(num))
+				res+="Buzz";
+		}
+		else
+		res= Integer.toString(num);
+		
+		return res;			
+	}
 }
