@@ -15,5 +15,13 @@ public class FizzBuzz {
 		else
 			return false;
 	}
+	
+	public boolean mult3(int num)
+	{
+		if ( num % 3 == 0)
+			return true;
+		else
+			return false;
+	}
 
 }
